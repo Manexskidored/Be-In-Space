@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(IMAGE/glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar {
+    height: 15%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: wavy;
+    color: hsl(36, 100%, 44%);
+}
+
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: hsl(202, 97%, 43%);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+button {
+    color: hsl(202, 97%, 43%);
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid hsl(36, 100%, 44%);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    border: none;
+}
+
+.content {
+    color: hsl(36, 100%, 44%);
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+.side-bar {
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(hsl(186, 98%, 25%), hsl(230, 98%, 22%));
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu {
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+    border: none
+}
+
+.bi.bi-list {
+    display: block;
+}
+
+.menu .bi.bi-list {
+    color: hsl(0, 0%, 71%);
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+.menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu .content {
+    display: none;
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.menu:hover .content {
+    display: block;
+}
+
+.menu a:hover {
+    background-color: hsl(0, 0%, 74%);
+}
+
+.bi.bi-list:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.social-links a,
+.useful-links a {
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.social-links {
+    width: -0px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 26px;
+}
+
+.useful-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.fa-sharp.fa-solid.fa-house.fa-lg {
+    color: hsl(0, 0%, 39%);
+}
+
+.fa-sharp.fa-solid.fa-house.fa-lg:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+.fa-sharp.fa-solid.fa-share-nodes.fa-lg {
+    color: hsl(0, 0%, 39%);
+}
+
+.fa-sharp.fa-solid.fa-share-nodes.fa-lg:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+.fa-solid.fa-circle-info.fa-lg {
+    color: hsl(0, 0%, 39%);
+}
+
+.fa-solid.fa-circle-info.fa-lg:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+.fa-brands.fa-x-twitter.fa-lg {
+    color: hsl(188, 100%, 50%);
+}
+
+.fa-brands.fa-x-twitter.fa-lg:hover {
+    color: hsl(188, 100%, 70%);
+}
+
+.fa-brands.fa-youtube.fa-lg {
+    color: hsl(0, 84%, 49%);
+}
+
+.fa-brands.fa-youtube.fa-lg:hover {
+    color: hsl(0, 84%, 59%);
+}
+
+.fa-brands.fa-whatsapp.fa-lg {
+    color: hsl(162, 72%, 65%);
+}
+
+.fa-brands.fa-whatsapp.fa-lg:hover {
+    color: hsl(162, 72%, 75%);
+}
+
+@media screen and (max-width: 600px) {
+    .side-bar {
+        width: 100%;
+        height: 85px;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        align-items: ;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+        transform: none;
+        background: none;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .navbar ul li {
+        margin: 0 8px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 10px 0 20px;
+        line-height: 40px;
+    }
+
+    button {
+        padding: 5px 15px;
+        border-radius: 30px;
+    }
+
+    .social-links {
+        width: auto;
+        position: unset;
+        transform: none;
+        font-size: 10px;
+    }
+
+    .useful-links {
+        width: auto;
+        position: unset;
+        font-size: 10px;
+    }
+
+    .social-links a,
+    .useful-links a {
+        margin: 18px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and(max-width:900px)and (min-width: 600px) {}
